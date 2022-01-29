@@ -12,7 +12,7 @@ const HomepageSignUpForm = ({onSubmit, setUserMail, ifSubmitted, userMail}) => (
         netlify-honeypot="bot-field"
     >
 
-        {ifSubmitted && <div className='bg-green-400 border-green-700'>Thanks your mail has been successfully delivered.</div>}
+        {ifSubmitted && <div className='bg-green-400 border-green-700'>Thanks your mail has been successfully delivered. Please, check your inbox for a small message from us. Check your promotion box if you can't find it in your primary box.</div>}
         <div hidden aria-hidden="true">
             <label>
                 Don't fill this out if you're human:
