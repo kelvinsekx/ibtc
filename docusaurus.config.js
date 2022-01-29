@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'IBTC-JS',
   tagline: 'Ibadan Developers Community-JS is a community for devs and all tech professionals who are currently working or residing in Ibadan',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://docusaurus-2.netlify.app', // Url to your site with no trailing slash
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
