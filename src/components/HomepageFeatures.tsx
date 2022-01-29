@@ -41,7 +41,7 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({title, image, description}: FeatureItem) {
   return (
-    <div className='flex flex-col items-center lg:w-1/3'>
+    <div className='flex flex-col items-center md:mt-8  md:w-2/4 lg:w-1/3'>
       <div className="text--center">
         <img
           className={styles.featureSvg}
@@ -61,7 +61,7 @@ export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="flex">
-        <div className="flex flex-row">
+        <div className="flex items-center flex-col lg:flex-row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

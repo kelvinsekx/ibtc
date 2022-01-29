@@ -3,7 +3,14 @@ import Link from '@docusaurus/Link';
 
 
 const HomepageSignUpForm = ({onSubmit, setUserMail, ifSubmitted, userMail}) => (
-    <form className="opacity-75 lg:w-2/3 shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4" onSubmit={e=>e.preventDefault()} name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <form 
+        className="opacity-75 lg:w-2/3 shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4" 
+        onSubmit={onSubmit} 
+        name="newsletter" 
+        method="POST" 
+        data-netlify="true" 
+        netlify-honeypot="bot-field"
+    >
 
         {ifSubmitted && <div className='bg-green-400 border-green-700'>Thanks your mail has been successfully delivered.</div>}
         <div hidden aria-hidden="true">
@@ -30,7 +37,7 @@ const HomepageSignUpForm = ({onSubmit, setUserMail, ifSubmitted, userMail}) => (
             />
         </div>
 
-        <div className="flex items-center justify-between pt-4" onClick={onSubmit}>
+        <div className="flex items-center justify-between pt-4">
             <button
                 className="bg-green-800 hover:bg-green-500 font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
                 type="submit"
@@ -38,7 +45,7 @@ const HomepageSignUpForm = ({onSubmit, setUserMail, ifSubmitted, userMail}) => (
                 Join Us
             </button>
         </div>
-        <footer>We are officially launching soon, read <Link to="/blog/welcome" className="hover:text-gray-800">Our welcome message to learn more</Link></footer>
+        <footer className='text-sm mt-4'>We are officially launching soon, read <Link to="/blog/welcome" className="hover:text-gray-800">Our welcome message to learn more</Link></footer>
     </form>
 )
 

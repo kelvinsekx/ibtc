@@ -8,22 +8,36 @@ import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 import SignUpForm from "../components/HomePageForm"
 
+function encode(data){
+  return Object.keys(data)
+  .map(key => encodeURIComponent(key) + "-" + encodeURIComponent(data[key]))
+  .join("&")
+}
 type IUser = string
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   const [userMail, setUserMail] = useState<IUser>('')
   const [submitted, setSubmitted] = useState(false)
 
-  const onSubmit = ()=> {
-    console.log(userMail)
+  const onSubmit = (e)=> {
+    e.preventDefault();
     setUserMail('')
-    return setSubmitted(true)
+    fetch('/', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      body: encode({
+        "form-name":"newsletter",
+        email: userMail
+      })
+    })
+    .then(()=>setSubmitted(true))
+    .catch(e=>console.log(e)) 
   }
   return (
     <header className={clsx('hero hero--primary flex flex-col items-center', styles.heroBanner)}>
       <div className="flex flex-col items-center">
         <h1 className="hero__title space-y-2">{siteConfig.title}</h1>
-        <p className="hero__subtitle lg:w-2/3 space-y-2">{siteConfig.tagline}.</p>
+        <p className="hero__subtitle lg:w-2/3 space-y-2 text-base">{siteConfig.tagline}.</p>
         <SignUpForm onSubmit={onSubmit} setUserMail={setUserMail} ifSubmitted={submitted} userMail={userMail}/>
       </div>
     </header>
