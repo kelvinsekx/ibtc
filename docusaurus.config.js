@@ -8,13 +8,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'IBTC-JS',
   tagline: 'Ibadan Developers Community-JS is a community for devs and all tech professionals who are currently working or residing in Ibadan',
-  url: 'https://docusaurus-2.netlify.app', // Url to your site with no trailing slash
+  url: 'https://ibadan-tech-community.netlify.app', // Url to your site with no trailing slash
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon_io/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Ibadan Tech Community', // Usually your GitHub org/user name.
+  projectName: 'IBTC', // Usually your repo name.
 
   presets: [
     [
@@ -24,13 +24,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/kelvinsekx/ibtc',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/kelvinsekx/ibtc',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
