@@ -8,10 +8,8 @@ import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 import SignUpForm from "../components/HomePageForm"
 
-function encode(data){
-  return Object.keys(data)
-  .map(key => encodeURIComponent(key) + "-" + encodeURIComponent(data[key]))
-  .join("&")
+function encode (data) {
+  return Object.keys(data).map((key)=> encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&')
 }
 type IUser = string
 function HomepageHeader() {
@@ -23,13 +21,15 @@ function HomepageHeader() {
     e.preventDefault();
     setUserMail('')
     fetch('/', {
-      method: 'POST',
-      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-      body: encode({
-        "form-name":"newsletter",
-        email: userMail
-      })
-    })
+      method: "POST",
+      headers: {"Content-Type": 'application/x-www-form-urlencoded'},
+      body: encode(
+          {
+          'form-name': form.getAttribute('name'),
+          'email': userMail
+          }
+      )
+  })
     .then(()=>setSubmitted(true))
     .catch(e=>console.log(e)) 
   }
