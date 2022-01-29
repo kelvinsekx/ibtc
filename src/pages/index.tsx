@@ -20,6 +20,7 @@ function HomepageHeader() {
   const onSubmit = (e)=> {
     e.preventDefault();
     setUserMail('')
+    const form = e.target
     fetch('/', {
       method: "POST",
       headers: {"Content-Type": 'application/x-www-form-urlencoded'},
