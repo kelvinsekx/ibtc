@@ -31,6 +31,7 @@ const HomepageSignUpForm = ({onSubmit, setUserMail, ifSubmitted, userMail}) => (
                 type="email"
                 value={userMail}
                 required
+                style={{color: "#444 !important"}}
                 aria-required
                 placeholder="yourmail@mail.com"
                 onChange={(e)=>setUserMail(e.target.value)}
