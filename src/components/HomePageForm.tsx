@@ -25,7 +25,7 @@ const HomepageSignUpForm = ({onSubmit, setUserMail, ifSubmitted, userMail}) => (
                 Signup to join our foundational original members
             </label>
             <input
-                className="shadow appearance-none border rounded w-full p-3 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                className="shadow appearance-none border rounded text-slate-700 w-full p-3 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
                 id="email"
                 name="email"
                 type="email"
