@@ -7,13 +7,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'IBTC-JS',
-  tagline: 'Ibadan Developers Community-JS is a community for devs and all tech professionals who are currently working or residing in Ibadan',
+  tagline: 'Ibadan Techies Club-JS is a community for devs and all tech professionals who are currently working or residing in Ibadan',
   url: 'https://ibadan-tech-community.netlify.app', // Url to your site with no trailing slash
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon_io/favicon.ico',
-  organizationName: 'Ibadan Tech Community', // Usually your GitHub org/user name.
+  organizationName: 'Ibadan Techies Club', // Usually your GitHub org/user name.
   projectName: 'IBTC', // Usually your repo name.
 
   presets: [
@@ -111,6 +111,14 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      announcementBar: {
+      id: 'we_changed_name',
+      content:
+        'We are changing the name of this vibrant community from IBadan Tech Community into Ibadan Techies Club. Please, bare with us.</a>',
+      backgroundColor: '#fafbfc',
+      textColor: '#091E42',
+      isCloseable: false,
+    },
     }),
 };
 
