@@ -46,7 +46,7 @@ const HomepageSignUpForm = ({onSubmit, setUserMail, ifSubmitted, userMail}) => (
                 Join Us
             </button>
         </div>
-        <footer className='text-sm mt-4'>We are officially launching soon, read <Link to="/blog/welcome" className="hover:text-gray-800">Our welcome message to learn more</Link></footer>
+        <footer className='text-sm mt-4'>We are officially launched March, 2022, read <Link to="/blog/welcome" className="hover:text-gray-800">Our welcome message to learn more</Link></footer>
     </form>
 )
 
