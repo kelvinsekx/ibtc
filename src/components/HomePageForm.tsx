@@ -22,7 +22,7 @@ const HomepageSignUpForm = ({onSubmit, setUserMail, ifSubmitted, userMail}) => (
 
         <div className="mb-4">
             <label className="block py-2 font-bold mb-2" htmlFor="email">
-                Signup to join our foundational original members
+                Signup to join us
             </label>
             <input
                 className="shadow appearance-none border rounded !text-slate-700 w-full p-3 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
