@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'IBTC-JS',
-  tagline: 'Ibadan Techies Club-JS is a community for devs and all tech professionals who are currently working or residing in Ibadan',
+  tagline: 'Ibadan Techies Club-JS is a community for devs and all tech professionals. We're starting off with Ibadan',
   url: 'https://ibadan-tech-community.netlify.app', // Url to your site with no trailing slash
   baseUrl: '/',
   onBrokenLinks: 'throw',
