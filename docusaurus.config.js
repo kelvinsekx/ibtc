@@ -87,7 +87,7 @@ const config = {
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/utdkelvin',
+                href: 'https://twitter.com/badtechys',
               },
             ],
           },
