@@ -82,8 +82,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Discord',
-                href: 'https://discord.gg/Ug9kNFwJFs',
+                label: 'GoFundMe',
+                href: 'https://www.gofundme.com/f/ibadan-techies-club-meetup',
               },
               {
                 label: 'Twitter',
