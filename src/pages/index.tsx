@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 
 import HomepageFeatures from '../components/HomepageFeatures';
 import SignUpForm from "../components/HomePageForm"
+import {encode} from '../utils'
 
-function encode (data) {
-  return Object.keys(data).map((key)=> encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&')
-}
+
 type IUser = string
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();

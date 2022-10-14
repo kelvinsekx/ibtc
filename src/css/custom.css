@@ -9,6 +9,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -40,4 +41,14 @@ html[data-theme='dark'] {
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-weight: 700 !important;
+  font-size: 1.7rem !important;
+  line-height: 4rem;
+}
+
+ul {
+  list-style: cambodian;
 }
