@@ -84,6 +84,7 @@ const config = {
               {
                 label: 'GoFundMe',
                 href: 'https://www.gofundme.com/f/ibadan-techies-club-meetup',
+                position: 'right'
               },
               {
                 label: 'Twitter',
